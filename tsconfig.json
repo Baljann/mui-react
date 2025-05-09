@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",                                 // Compile to ES6-compatible JS
+    "lib": ["dom", "dom.iterable", "esnext"],        // Include DOM and latest JS features
+    "module": "esnext",                              // Use modern ES module syntax
+    "moduleResolution": "node",                      // Resolve modules like Node.js
+    "allowJs": true,                                 // Allow JavaScript files
+    "skipLibCheck": true,                            // Skip type checking for .d.ts files
+    "esModuleInterop": true,                         // Enable default import compatibility
+    "allowSyntheticDefaultImports": true,            // Allow default imports from non-ES modules
+    "strict": true,                                  // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true,        // Enforce consistent file name casing
+    "resolveJsonModule": true,                       // Allow importing .json files
+    "isolatedModules": true,                         // Ensure each file can be transpiled independently
+    "noEmit": true,                                  // Do not output JS files (used with bundlers)
+    "jsx": "react-jsx",                              // Use React 17+ JSX transform
+    "baseUrl": "src"                                 // Set base import path to /src
+  },
+  "include": ["src"]                                 // Only include source files
+}
