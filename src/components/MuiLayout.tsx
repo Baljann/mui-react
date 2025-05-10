@@ -1,7 +1,8 @@
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
-import Grid from "@mui/material";
+import Grid from "@mui/material/Grid";
+import React from "react";
 
 export const MuiLayout = () => {
   return (
@@ -39,22 +40,22 @@ export const MuiLayout = () => {
       </Stack>
 
       <Grid container spacing={2}>
-        <Grid item xs={6}>
-          <Box bgcolor="primary.light" p={2}>
+        <Grid>
+          <Box bgcolor="error.main" p={2} color="white">
             Item 1
           </Box>
         </Grid>
-        <Grid item xs={6}>
+        <Grid>
           <Box bgcolor="primary.light" p={2}>
             Item 2
           </Box>
         </Grid>
-        <Grid item xs={6}>
+        <Grid>
           <Box bgcolor="primary.light" p={2}>
             Item 3
           </Box>
         </Grid>
-        <Grid item xs={6}>
+        <Grid>
           <Box bgcolor="primary.light" p={2}>
             Item 4
           </Box>
