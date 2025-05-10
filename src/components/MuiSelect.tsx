@@ -1,5 +1,5 @@
 import { Box, TextField, MenuItem } from "@mui/material";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export const MuiSelect = () => {
   const [countries, setCountries] = useState<string[]>([]);
@@ -22,8 +22,8 @@ export const MuiSelect = () => {
           SelectProps={{
             multiple: true,
           }}
-          size='small'
-          helperText='Please select your country'
+          size="small"
+          helperText="Please select your country"
           error
         >
           <MenuItem value="TR">Turkiye</MenuItem>

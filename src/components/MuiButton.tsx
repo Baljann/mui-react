@@ -11,7 +11,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import FormatBoldIcon from "@mui/icons-material/FormatBold";
 import FormatItalicIcon from "@mui/icons-material/FormatItalic";
 import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export const MuiButton = () => {
   const [formats, setFormats] = useState<string | null>(null);
@@ -23,7 +23,10 @@ export const MuiButton = () => {
   };
 
   return (
-    <Stack spacing={4} sx={{ border: '1px solid black', padding: 2, marginBottom: 4 }}>
+    <Stack
+      spacing={4}
+      sx={{ border: "1px solid black", padding: 2, marginBottom: 4 }}
+    >
       <h1>MuiButton Examples</h1>
       <Stack display="block" spacing={2} direction="row">
         <Button variant="text" href="#">
