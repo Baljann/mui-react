@@ -9,6 +9,9 @@ import { MuiSwitch } from "components/MuiSwitch";
 import { MuiRating } from "components/MuiRating";
 import { MuiAutoComplete } from "components/MuiAutoComplete";
 import { MuiLayout } from "components/MuiLayout";
+import { MuiAccordion } from "components/MuiAccordion";
+import { MuiImageList } from "components/MuiImageList";
+import { MuiNavbar } from "components/MuiNavbar";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
       <MuiRating />
       <MuiAutoComplete />
       <MuiLayout />
+      <MuiAccordion />
+      <MuiImageList />
+      <MuiNavbar />
     </div>
   );
 }

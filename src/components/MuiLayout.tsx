@@ -1,19 +1,15 @@
-import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
-import Divider from "@mui/material/Divider";
+import { Box, Stack, Divider } from "@mui/material";
 import Grid from "@mui/material/Grid";
-import React from "react";
 
 export const MuiLayout = () => {
   return (
-    <>
+    <Box sx={{ border: "1px solid black", padding: "16px", marginBottom: 4 }}>
       <Stack
-        sx={{ border: "1px solid black", padding: "16px", marginBottom: 4 }}
         direction="row"
         spacing={2}
         divider={<Divider orientation="vertical" flexItem />}
       >
-        <h1>MuiLayout Example</h1>
+        <h1>MuiLayout Example - FlexBox & Grid</h1>
         <Box
           sx={{
             backgroundColor: "primary.main",
@@ -38,29 +34,29 @@ export const MuiLayout = () => {
           I am a Front-end Developer
         </Box>
       </Stack>
-
+      <hr />
       <Grid container spacing={2}>
-        <Grid>
+        <Grid size={{ xs: 6, md: 4 }}>
           <Box bgcolor="error.main" p={2} color="white">
             Item 1
           </Box>
         </Grid>
-        <Grid>
+        <Grid size={{ xs: 6, md: 4 }}>
           <Box bgcolor="primary.light" p={2}>
             Item 2
           </Box>
         </Grid>
-        <Grid>
+        <Grid size={{ xs: 6, md: 4 }}>
           <Box bgcolor="primary.light" p={2}>
             Item 3
           </Box>
         </Grid>
-        <Grid>
+        <Grid size={{ xs: 6, md: 4 }}>
           <Box bgcolor="primary.light" p={2}>
             Item 4
           </Box>
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 };
