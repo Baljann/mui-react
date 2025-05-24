@@ -37,6 +37,7 @@ export const MuiTable = () => {
           </TableBody>
         </Table>
       </TableContainer>
+      <hr/>
     </>
   );
 };

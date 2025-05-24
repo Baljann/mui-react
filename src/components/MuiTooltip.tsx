@@ -4,7 +4,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 export const MuiTooltip = () => {
   return (
     <div>
-      <h1>MuiTooltip</h1>
+      <h1>MuiTooltip Example</h1>
       <Tooltip
         title="Delete"
         placement="right"
