@@ -20,6 +20,9 @@ import { MuiBottomNavigation } from "components/MuiBottomNavigation";
 import { MuiAvatar } from "components/MuiAvatar";
 import { MuiBadge } from "components/MuiBadge";
 import { MuiList } from "components/MuiList";
+import { MuiChip } from "components/MuiChip";
+import { MuiTooltip } from "components/MuiTooltip";
+import { MuiTable } from "components/MuiTable";
 
 function App() {
   return (
@@ -45,6 +48,9 @@ function App() {
       <MuiAvatar />
       <MuiBadge />
       <MuiList />
+      <MuiChip />
+      <MuiTooltip />
+      <MuiTable/>
     </div>
   );
 }

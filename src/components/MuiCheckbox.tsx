@@ -31,7 +31,7 @@ export const MuiCheckbox = () => {
       <Box>
         <FormControlLabel
           label="I accept terms and conditions"
-          control={<Checkbox checked={acceptTnC} onChange={handleChange} />}
+          control={<Checkbox checked={acceptTnC} onChange={handleChange} />} 
         />
       </Box>
       <Box>
