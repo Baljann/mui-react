@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# MUI React Component Showcase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a comprehensive showcase of Material-UI (MUI) components, built with React and TypeScript. It demonstrates a wide variety of MUI components, layouts, and advanced features, serving as a reference or playground for learning and experimenting with MUI.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **MUI Components**: Buttons, Typography, TextFields, Selects, Radio Buttons, Checkboxes, Switches, Ratings, AutoComplete, Layouts, Accordions, Image Lists, Navbars, Links, Breadcrumbs, Drawers, Speed Dials, Bottom Navigation, Avatars, Badges, Lists, Chips, Tooltips, Tables, Alerts, Snackbars, Dialogs, Progress, Skeletons, Loading Buttons, Pickers, Date Range Pickers, Tabs, Timelines, Masonry, and Responsive design.
+- **Theming**: Custom MUI theme with palette and status color overrides.
+- **Date Pickers**: Integrated with `@mui/x-date-pickers` and `date-fns`.
+- **TypeScript**: Type-safe components and theme extensions.
+- **Testing**: Setup with React Testing Library and Jest.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v16 or later recommended)
+- npm
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+   ```sh
+   git clone <your-repo-url>
+   cd mui-react
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Running the App
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the development server:
 
-### `npm run eject`
+```sh
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Running Tests
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+npm test
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Building for Production
 
-## Learn More
+```sh
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `src/components/`: All MUI component demos.
+- `src/App.tsx`: Main app entry, imports and renders all component demos.
+- `src/index.js`: React app bootstrap.
+- `public/`: Static assets and HTML template.
 
-### Code Splitting
+## Custom Theme
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The app uses a custom MUI theme defined in [`src/App.tsx`](src/App.tsx), with additional palette colors and status fields (see [`src/components/theme.d.ts`](src/components/theme.d.ts)).
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is for educational and demonstration purposes.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created with [Create React App](https://github.com/facebook/create-react-app) and [Material-UI](https://mui.com/).
