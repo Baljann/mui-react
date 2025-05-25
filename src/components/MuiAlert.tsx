@@ -1,9 +1,9 @@
-import { Stack, Alert, AlertTitle, Button } from "@mui/material";
+import {Box, Stack, Alert, AlertTitle, Button } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 
 export const MuiAlert = () => {
   return (
-    <>
+    <Box sx={{ border: '1px solid black', padding: 2, marginBottom: 4 }}>
       <h1>MuiAlert Examples</h1>
       <Stack spacing={2}>
         <h3>*Default Alert</h3>
@@ -57,7 +57,7 @@ export const MuiAlert = () => {
           This is a success alert
         </Alert>
       </Stack>
-      <hr />
-    </>
+
+    </Box>
   );
 };

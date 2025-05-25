@@ -1,4 +1,4 @@
-import { Stack, Chip, Avatar } from "@mui/material";
+import { Box, Stack, Chip, Avatar } from "@mui/material";
 import FaceIcon from "@mui/icons-material/Face";
 import {useState} from 'react'
 
@@ -10,9 +10,9 @@ export const MuiChip = () => {
   };
 
   return (
-    <>
-      <hr />
-      <h1>MuiCheckbox Examples</h1>
+    <Box sx={{ border: '1px solid black', padding: 2, marginBottom: 4 }}>
+
+      <h1>MuiChip Examples</h1>
       <Stack direction="row" spacing={1}>
         <Chip label="Chip" color="primary" size="small" icon={<FaceIcon />} />
         <Chip
@@ -31,8 +31,7 @@ export const MuiChip = () => {
        <Chip key={chip} label={chip} onDelete={() => handleDelete(chip)}/>
         ))}
       </Stack>
-      <hr/>
-    </>
+      </Box>
   );
 };
 

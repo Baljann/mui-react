@@ -1,4 +1,4 @@
-import { SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material";
+import { Box, SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material";
 import CopyIcon from "@mui/icons-material/FileCopyOutlined";
 import PrintIcon from "@mui/icons-material/Print";
 import ShareIcon from "@mui/icons-material/Share";
@@ -6,7 +6,7 @@ import EditIcon from "@mui/icons-material/Edit";
 
 export const MuiSpeedDial = () => {
   return (
-    <>
+    <Box sx={{ border: "1px solid black", padding: 2, marginBottom: 4 }}>
       <h1> MuiSpeedDial Examples</h1>
       <SpeedDial
         ariaLabel="Navigabtion speed dial"
@@ -25,7 +25,6 @@ export const MuiSpeedDial = () => {
           tooltipOpen
         />
       </SpeedDial>
-      <hr/>
-    </>
+    </Box>
   );
 };

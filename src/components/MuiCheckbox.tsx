@@ -25,13 +25,14 @@ export const MuiCheckbox = () => {
       setSkills(skills.filter((skill) => skill !== event.target.value));
     }
   };
+  
   return (
     <Box sx={{ border: "1px solid black", padding: 2, marginBottom: 4 }}>
       <h1>MuiCheckbox Examples</h1>
       <Box>
         <FormControlLabel
           label="I accept terms and conditions"
-          control={<Checkbox checked={acceptTnC} onChange={handleChange} />} 
+          control={<Checkbox checked={acceptTnC} onChange={handleChange} />}
         />
       </Box>
       <Box>

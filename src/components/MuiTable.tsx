@@ -1,4 +1,5 @@
 import {
+  Box,
   TableContainer,
   Table,
   TableHead,
@@ -10,7 +11,7 @@ import {
 
 export const MuiTable = () => {
   return (
-    <>
+    <Box sx={{ border: '1px solid black', padding: 2, marginBottom: 4 }}>
       <h1>MuiTable Example</h1>
       <TableContainer component={Paper} sx={{ maxHeight: "300px" }}>
         <Table aria-label="simple table" stickyHeader>
@@ -37,8 +38,7 @@ export const MuiTable = () => {
           </TableBody>
         </Table>
       </TableContainer>
-      <hr/>
-    </>
+      </Box>
   );
 };
 

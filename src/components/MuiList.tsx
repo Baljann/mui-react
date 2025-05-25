@@ -13,8 +13,7 @@ import MailIcon from "@mui/icons-material/Mail";
 
 export const MuiList = () => {
   return (
-    <>
-      <hr />
+    <Box sx={{ border: "1px solid black", padding: 2, marginBottom: 4 }}>
       <h1>MuiList Example</h1>
       <Box sx={{ width: "400px", bgcolor: "#efefef" }}>
         <List>
@@ -54,6 +53,6 @@ export const MuiList = () => {
           </ListItem>
         </List>
       </Box>
-    </>
+    </Box>
   );
 };

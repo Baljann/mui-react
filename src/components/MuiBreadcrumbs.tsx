@@ -3,8 +3,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export const MuiBreadcrumbs = () => {
   return (
-    <Box>
-      <hr />
+    <Box sx={{ border: '1px solid black', padding: 2, marginBottom: 4 }}>
       <h1>MuiBreadcrumbs Example</h1>
       <Breadcrumbs
         aria-label="breadcrumb"
@@ -23,7 +22,6 @@ export const MuiBreadcrumbs = () => {
         </Link>
         <Typography color="text-primary">Shoes</Typography>
       </Breadcrumbs>
-      <hr />
     </Box>
   );
 };

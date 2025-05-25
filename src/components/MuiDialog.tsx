@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Dialog,
   DialogTitle,
@@ -11,8 +12,8 @@ import { useState } from "react";
 export const MuiDialog = () => {
   const [open, setOpen] = useState(false);
   return (
-    <>
-      <h1>MuiDrawer Dialog</h1>
+    <Box sx={{ border: "1px solid black", padding: 2, marginBottom: 4 }}>
+      <h1>MuiDialog Example</h1>
       <Button onClick={() => setOpen(true)}>Open dialog</Button>
       <Dialog
         open={open}
@@ -34,7 +35,6 @@ export const MuiDialog = () => {
           </Button>
         </DialogActions>
       </Dialog>
-      <hr/>
-    </>
+    </Box>
   );
 };

@@ -5,8 +5,8 @@ import { useState } from "react";
 export const MuiDrawer = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   return (
-    <>
-    <h1>MuiDrawer Example:</h1>
+    <Box sx={{ border: "1px solid black", padding: 2, marginBottom: 4 }}>
+      <h1>MuiDrawer Example:</h1>
       <IconButton
         size="large"
         edge="start"
@@ -27,7 +27,6 @@ export const MuiDrawer = () => {
           </Typography>
         </Box>
       </Drawer>
-      <hr />
-    </>
+    </Box>
   );
 };

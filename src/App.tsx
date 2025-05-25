@@ -1,8 +1,10 @@
+import "./App.css";
+import { createTheme, colors, ThemeProvider } from "@mui/material";
 import { MuiButton } from "./components/MuiButton";
 import { MuiTypography } from "./components/MuiTypography";
 import { MuiTextField } from "components/MuiTextField";
 import { MuiSelect } from "components/MuiSelect";
-import "./App.css";
+
 import MuiRadioButton from "components/MuiRadioButton";
 import { MuiCheckbox } from "components/MuiCheckbox";
 import { MuiSwitch } from "components/MuiSwitch";
@@ -27,39 +29,76 @@ import { MuiAlert } from "components/MuiAlert";
 import { MuiSnackbar } from "components/MuiSnackbar";
 import { MuiDialog } from "components/MuiDialog";
 import { MuiProgress } from "components/MuiProgress";
+import { MuiSkeleton } from "components/MuiSkeleton";
+import { MuiLoadingButton } from "components/MuiLoadingButton";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import MuiPicker from "components/MuiPicker";
+import { MuiDateRangePicker } from "components/MuiDateRangePicker";
+import { MuiTabs } from "components/MuiTabs";
+import { MuiTimeline } from "components/MuiTimeline";
+import { MuiMasonry } from "components/MuiMasonry";
+import { MuiResponsiveness } from "components/MuiResponsiveness";
+
+const theme = createTheme({
+  status: {
+    danger: "#e53e3e",
+  },
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+    neutral: {
+      main: colors.grey[500],
+      darker: colors.grey[700],
+    },
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <MuiTypography />
-      <MuiButton />
-      <MuiTextField />
-      <MuiSelect />
-      <MuiRadioButton />
-      <MuiCheckbox />
-      <MuiSwitch />
-      <MuiRating />
-      <MuiAutoComplete />
-      <MuiLayout />
-      <MuiAccordion />
-      <MuiImageList />
-      <MuiNavbar />
-      <MuiLink />
-      <MuiBreadcrumbs />
-      <MuiDrawer />
-      <MuiSpeedDial />
-      <MuiBottomNavigation />
-      <MuiAvatar />
-      <MuiBadge />
-      <MuiList />
-      <MuiChip />
-      <MuiTooltip />
-      <MuiTable />
-      <MuiAlert />
-      <MuiSnackbar />
-      <MuiDialog />
-      <MuiProgress />
-    </div>
+    <ThemeProvider theme={theme}>
+      <LocalizationProvider dateAdapter={AdapterDateFns}>
+        <div className="App">
+          <MuiTypography />
+          <MuiButton />
+          <MuiTextField />
+          <MuiSelect />
+          <MuiRadioButton />
+          <MuiCheckbox />
+          <MuiSwitch />
+          <MuiRating />
+          <MuiAutoComplete />
+          <MuiLayout />
+          <MuiAccordion />
+          <MuiImageList />
+          <MuiNavbar />
+          <MuiLink />
+          <MuiBreadcrumbs />
+          <MuiDrawer />
+          <MuiSpeedDial />
+          <MuiBottomNavigation />
+          <MuiAvatar />
+          <MuiBadge />
+          <MuiList />
+          <MuiChip />
+          <MuiTooltip />
+          <MuiTable />
+          <MuiAlert />
+          <MuiSnackbar />
+          <MuiDialog />
+          <MuiProgress />
+          <MuiSkeleton />
+          <MuiLoadingButton />
+          <MuiPicker />
+          <MuiDateRangePicker />
+          <MuiTabs />
+          <MuiTimeline />
+          <MuiMasonry />
+          <MuiResponsiveness />
+        </div>
+      </LocalizationProvider>
+    </ThemeProvider>
   );
 }
 

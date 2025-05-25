@@ -1,9 +1,9 @@
-import { Tooltip, IconButton } from "@mui/material";
+import { Box, Tooltip, IconButton } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 export const MuiTooltip = () => {
   return (
-    <div>
+    <Box sx={{ border: "1px solid black", padding: 2, marginBottom: 4 }}>
       <h1>MuiTooltip Example</h1>
       <Tooltip
         title="Delete"
@@ -16,7 +16,6 @@ export const MuiTooltip = () => {
           <DeleteIcon />
         </IconButton>
       </Tooltip>
-      <hr/>
-    </div>
+    </Box>
   );
 };
